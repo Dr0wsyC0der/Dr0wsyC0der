@@ -4,7 +4,7 @@
 
 ### Python Backend-разработчик · IoT / Embedded-разработчик
 
-Разрабатываю асинхронные backend-сервисы, IoT-устройства и системы компьютерного зрения.
+Разрабатываю асинхронные backend-сервисы, IoT-устройства.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Dr0wsyC0der-181717?style=for-the-badge&logo=github)](https://github.com/Dr0wsyC0der)
 [![Telegram](https://img.shields.io/badge/Telegram-@aIexey4ik-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/aIexey4ik)
