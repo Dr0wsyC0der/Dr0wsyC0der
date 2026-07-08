@@ -206,21 +206,6 @@ REST API для управления задачами на FastAPI с аутен
 
 ---
 
-## 📈 Активность GitHub
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Dr0wsyC0der&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dr0wsyC0der&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top languages" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=Dr0wsyC0der&theme=github-dark-blue&hide_border=true" alt="GitHub streak" />
-
-</div>
-
----
-
 ## 🤝 Связаться со мной
 
 Мне интересны проекты в области **Python Backend**, **IoT / Embedded** и инженерные задачи, где программное обеспечение взаимодействует с реальным миром.
