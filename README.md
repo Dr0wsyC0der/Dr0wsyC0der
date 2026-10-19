@@ -54,31 +54,6 @@
 </td>
 <td width="50%" valign="top">
 
-### 📊 <a href="https://github.com/Dr0wsyC0der/afin-ui-backend">AFIN</a>
-
-Платформа моделирования и анализа бизнес-процессов с ML-прогнозом задержек и объяснениями от LLM.
-
-**Основные возможности**
-
-<ul>
-<li>REST API на FastAPI, JWT-аутентификация</li>
-<li>BPMN-модели процессов: CRUD, импорт и экспорт</li>
-<li>Симуляция выполнения процесса по графу модели</li>
-<li>Прогнозирование задержек с LightGBM</li>
-<li>Интеграция LLM-сервиса (Qwen2) для объяснений и AI-чата</li>
-<li>Три сервиса в Docker Compose</li>
-</ul>
-
-🏆 **Финалист Акселератора МТУСИ**
-
-`Python` `FastAPI` `SQLAlchemy` `LightGBM` `LLM` `httpx` `Docker`
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
 ### 🖥️ <a href="https://github.com/Dr0wsyC0der/desktop-hub">ESP Widget</a>
 
 Настольный IoT-виджет на ESP32-S3 с локальным backend и приложением для ПК.
@@ -97,6 +72,9 @@
 `ESP32-S3` `C++` `PlatformIO` `Python` `aiohttp` `WebSocket` `OTA`
 
 </td>
+</tr>
+
+<tr>
 <td width="50%" valign="top">
 
 ### 🌊 <a href="https://github.com/Dr0wsyC0der/WaveFrontLab">WaveFrontLab</a>
@@ -115,6 +93,27 @@
 📄 Зарегистрирован в Роспатенте как программа для ЭВМ — подробности ниже ⬇️
 
 `Python` `OpenCV` `NumPy` `PyQt6` `Computer Vision`
+
+</td>
+<td width="50%" valign="top">
+
+### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
+
+Асинхронный REST API интернет-магазина.
+
+**Основные возможности**
+
+<ul>
+<li>JWT-аутентификация с access / refresh токенами</li>
+<li>Роли <code>buyer</code> / <code>seller</code> / <code>admin</code></li>
+<li>Каталог товаров и вложенные категории</li>
+<li>Фильтрация, пагинация и полнотекстовый поиск PostgreSQL</li>
+<li>Корзина, заказы и управление остатками</li>
+<li>Отзывы и автоматический пересчёт рейтинга</li>
+<li>Миграции базы данных через Alembic</li>
+</ul>
+
+`Python` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `asyncpg` `Alembic`
 
 </td>
 </tr>
@@ -148,11 +147,11 @@
 
 ## 🌐 Другие проекты
 
-### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
+### 📊 <a href="https://github.com/Dr0wsyC0der/afin-ui-backend">AFIN</a> · 🏆 финалист Акселератора МТУСИ
 
-Асинхронный REST API интернет-магазина: JWT access / refresh, роли buyer / seller / admin, полнотекстовый поиск PostgreSQL, корзина и заказы, миграции Alembic.
+Платформа моделирования бизнес-процессов: BPMN-редактор, симуляция, прогноз задержек на LightGBM и объяснения от LLM. Backend и интеграция ML/LLM-сервиса.
 
-`Python` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `asyncpg` `Alembic`
+`Python` `FastAPI` `LightGBM` `LLM` `React` `Docker`
 
 ### 🌐 <a href="https://github.com/Dr0wsyC0der/afin_web">AFIN Web</a>
 
