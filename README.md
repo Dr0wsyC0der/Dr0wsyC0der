@@ -119,29 +119,6 @@
 </td>
 </tr>
 
-<tr>
-<td colspan="2" valign="top">
-
-### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
-
-Асинхронный REST API интернет-магазина.
-
-**Основные возможности**
-
-<ul>
-<li>JWT-аутентификация с access / refresh токенами</li>
-<li>Роли <code>buyer</code> / <code>seller</code> / <code>admin</code></li>
-<li>Каталог товаров и вложенные категории</li>
-<li>Фильтрация, пагинация и полнотекстовый поиск PostgreSQL</li>
-<li>Корзина, заказы и управление остатками</li>
-<li>Отзывы и автоматический пересчёт рейтинга</li>
-<li>Миграции базы данных через Alembic</li>
-</ul>
-
-`Python` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `asyncpg` `Alembic`
-
-</td>
-</tr>
 </table>
 
 ---
@@ -171,6 +148,12 @@
 ---
 
 ## 🌐 Другие проекты
+
+### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
+
+Асинхронный REST API интернет-магазина: JWT access / refresh, роли buyer / seller / admin, полнотекстовый поиск PostgreSQL, корзина и заказы, миграции Alembic.
+
+`Python` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `asyncpg` `Alembic`
 
 ### 🌐 <a href="https://github.com/Dr0wsyC0der/afin_web">AFIN Web</a>
 
