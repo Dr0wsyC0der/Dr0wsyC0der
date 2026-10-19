@@ -77,6 +77,28 @@
 <tr>
 <td width="50%" valign="top">
 
+### 📊 <a href="https://github.com/Dr0wsyC0der/afin-ui-backend">AFIN</a>
+
+Платформа моделирования и анализа бизнес-процессов с ML-прогнозом задержек и объяснениями от LLM.
+
+**Основные возможности**
+
+<ul>
+<li>REST API на FastAPI, JWT-аутентификация</li>
+<li>BPMN-модели процессов: CRUD, импорт и экспорт</li>
+<li>Симуляция выполнения процесса по графу модели</li>
+<li>Прогнозирование задержек с LightGBM</li>
+<li>Интеграция LLM-сервиса (Qwen2) для объяснений и AI-чата</li>
+<li>Три сервиса в Docker Compose</li>
+</ul>
+
+🏆 **Финалист Акселератора МТУСИ**
+
+`Python` `FastAPI` `SQLAlchemy` `LightGBM` `LLM` `httpx` `Docker`
+
+</td>
+<td width="50%" valign="top">
+
 ### 🌊 <a href="https://github.com/Dr0wsyC0der/WaveFrontLab">WaveFrontLab</a>
 
 Анализ интерферограмм датчика волнового фронта на основе эффекта Тальбота в реальном времени.
@@ -95,7 +117,10 @@
 `Python` `OpenCV` `NumPy` `PyQt6` `Computer Vision`
 
 </td>
-<td width="50%" valign="top">
+</tr>
+
+<tr>
+<td colspan="2" valign="top">
 
 ### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
 
@@ -146,12 +171,6 @@
 ---
 
 ## 🌐 Другие проекты
-
-### 📊 <a href="https://github.com/Dr0wsyC0der/afin-ui-backend">AFIN</a> · 🏆 финалист Акселератора МТУСИ
-
-Платформа моделирования бизнес-процессов: BPMN-редактор, симуляция, прогноз задержек на LightGBM и объяснения от LLM. Backend и интеграция ML/LLM-сервиса.
-
-`Python` `FastAPI` `LightGBM` `LLM` `React` `Docker`
 
 ### 🌐 <a href="https://github.com/Dr0wsyC0der/afin_web">AFIN Web</a>
 
