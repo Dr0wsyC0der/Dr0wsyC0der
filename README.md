@@ -17,7 +17,7 @@
 
 - 🎓 Студент **МТУСИ**, направление **15.03.04 — Автоматизация технологических процессов и производств**
 - 🐍 Основное направление — **Python Backend Development**
-- ⚡ Разрабатываю API и backend-сервисы с использованием **FastAPI, SQLAlchemy, PostgreSQL и asyncio**
+- ⚡ Разрабатываю API и backend-сервисы с использованием **FastAPI, SQLAlchemy, PostgreSQL, Redis и asyncio**
 - 🔌 Создаю **ESP32 / IoT / Embedded** системы
 - 👁 Работаю с **OpenCV, NumPy и обработкой изображений в реальном времени**
 - 🏆 Финалист **Акселератора МТУСИ**
@@ -33,46 +33,45 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
+### 🏠 <a href="https://github.com/Dr0wsyC0der/clickRent">ClickRent</a>
 
-Асинхронный REST API для платформы электронной коммерции.
+Асинхронный backend сервиса краткосрочной аренды жилья с чатом и уведомлениями в реальном времени.
 
 **Основные возможности**
 
 <ul>
-<li>JWT-аутентификация с access / refresh токенами</li>
-<li>Роли <code>buyer</code> / <code>seller</code> / <code>admin</code></li>
-<li>Каталог товаров и вложенные категории</li>
-<li>Полнотекстовый поиск PostgreSQL</li>
-<li>Корзина, заказы и управление остатками</li>
-<li>Отзывы и автоматический пересчёт рейтинга</li>
-<li>Миграции базы данных через Alembic</li>
+<li>Слои routes → services → repositories, доменные исключения</li>
+<li>Защита от двойного бронирования: <code>SELECT ... FOR UPDATE</code>, soft-lock с TTL</li>
+<li>WebSocket-чат, уведомления и счётчик зрителей между репликами через Redis Pub/Sub</li>
+<li>Кэш с версионной инвалидацией, rate limiting, распределённый лок фоновых задач</li>
+<li>JWT access / refresh с ротацией</li>
+<li>pytest, ruff, CI на GitHub Actions со smoke-тестом стека</li>
+<li>Gunicorn + nginx, масштабирование реплик через Docker Compose</li>
 </ul>
 
-`Python` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `asyncpg` `Alembic`
+`Python` `FastAPI` `PostgreSQL` `Redis` `SQLAlchemy 2.0` `Alembic` `WebSocket` `pytest` `Docker`
 
 </td>
 <td width="50%" valign="top">
 
 ### 📊 <a href="https://github.com/Dr0wsyC0der/afin-ui-backend">AFIN</a>
 
-Backend-платформа для моделирования, симуляции и аналитики бизнес-процессов.
+Платформа моделирования и анализа бизнес-процессов с ML-прогнозом задержек и объяснениями от LLM.
 
 **Основные возможности**
 
 <ul>
-<li>REST API на FastAPI</li>
-<li>JWT-аутентификация и управление пользователями</li>
-<li>Моделирование бизнес-процессов</li>
-<li>Дискретная симуляция процессов с SimPy</li>
+<li>REST API на FastAPI, JWT-аутентификация</li>
+<li>BPMN-модели процессов: CRUD, импорт и экспорт</li>
+<li>Симуляция выполнения процесса по графу модели</li>
 <li>Прогнозирование задержек с LightGBM</li>
-<li>Генерация AI-объяснений с использованием LLM</li>
-<li>Контейнеризация и оркестрация через Docker Compose</li>
+<li>Интеграция LLM-сервиса (Qwen2) для объяснений и AI-чата</li>
+<li>Три сервиса в Docker Compose</li>
 </ul>
 
 🏆 **Финалист Акселератора МТУСИ**
 
-`Python` `FastAPI` `SQLAlchemy` `SimPy` `LightGBM` `Docker` `AI/ML`
+`Python` `FastAPI` `SQLAlchemy` `LightGBM` `LLM` `httpx` `Docker`
 
 </td>
 </tr>
@@ -80,19 +79,19 @@ Backend-платформа для моделирования, симуляции
 <tr>
 <td width="50%" valign="top">
 
-### 🖥️ <a href="https://github.com/Dr0wsyC0der/desktop-hub">Desktop Hub</a>
+### 🖥️ <a href="https://github.com/Dr0wsyC0der/desktop-hub">ESP Widget</a>
 
-Умный настольный IoT-виджет на базе ESP32-S3 с программным обеспечением для ПК.
+Настольный IoT-виджет на ESP32-S3 с локальным backend и приложением для ПК.
 
 **Основные возможности**
 
 <ul>
-<li>Прошивка на C++ / PlatformIO</li>
-<li>Локальный Python-backend</li>
+<li>Прошивка на C++ / PlatformIO, интерфейс на LVGL</li>
+<li>Локальный backend на aiohttp</li>
 <li>Автоматическое обнаружение устройства по UDP</li>
 <li>Обмен данными в реальном времени через WebSocket</li>
 <li>OTA-обновление прошивки</li>
-<li>Отображение загрузки CPU / GPU / RAM и внешних данных</li>
+<li>Загрузка CPU / GPU / RAM, погода, расписание транспорта</li>
 </ul>
 
 `ESP32-S3` `C++` `PlatformIO` `Python` `aiohttp` `WebSocket` `OTA`
@@ -102,13 +101,14 @@ Backend-платформа для моделирования, симуляции
 
 ### 🌊 <a href="https://github.com/Dr0wsyC0der/WaveFrontLab">WaveFrontLab</a>
 
-Приложение для анализа видео в реальном времени и исследования искажений волнового фронта на основе эффекта Тальбота.
+Анализ интерферограмм датчика волнового фронта на основе эффекта Тальбота в реальном времени.
 
 **Основные возможности**
 
 <ul>
-<li>Анализ видеопотока в реальном времени</li>
-<li>Построение интерактивных 3D-тальбограмм</li>
+<li>Сегментация и отслеживание точек интерференционной картины</li>
+<li>Автоподбор параметров фильтров через Optuna</li>
+<li>3D-карта искажений волнового фронта в реальном времени</li>
 <li>Графический интерфейс на PyQt6</li>
 </ul>
 
@@ -148,23 +148,17 @@ Backend-платформа для моделирования, симуляции
 
 ## 🌐 Другие проекты
 
-### 📋 <a href="https://github.com/Dr0wsyC0der/Task-Manager-API">Task Manager API</a>
+### 🛒 <a href="https://github.com/Dr0wsyC0der/fastapi_ecommerce">FastAPI E-commerce API</a>
 
-REST API для управления задачами на FastAPI с аутентификацией пользователей и CRUD-операциями.
+Асинхронный REST API интернет-магазина: JWT access / refresh, роли buyer / seller / admin, полнотекстовый поиск PostgreSQL, корзина и заказы, миграции Alembic.
 
-`Python` `FastAPI` `REST API`
+`Python` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `asyncpg` `Alembic`
 
 ### 🌐 <a href="https://github.com/Dr0wsyC0der/afin_web">AFIN Web</a>
 
-Презентационный веб-сайт платформы AFIN для демонстрации возможностей и ключевых функций проекта.
+Презентационный сайт платформы AFIN.
 
 `HTML` `CSS` `JavaScript`
-
-### 🎮 <a href="https://github.com/Dr0wsyC0der/Auto-Battle-Arena">Auto Battle Arena</a>
-
-Консольная self-playing игра на Python с автоматическими сражениями.
-
-`Python` `OOP`
 
 ---
 
@@ -180,10 +174,15 @@ REST API для управления задачами на FastAPI с аутен
 ![Alembic](https://img.shields.io/badge/Alembic-6BA81E?style=flat-square)
 ![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square)
 ![asyncio](https://img.shields.io/badge/asyncio-3776AB?style=flat-square)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 
 **DevOps и инструменты**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
