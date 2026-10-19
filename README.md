@@ -54,6 +54,29 @@
 </td>
 <td width="50%" valign="top">
 
+### 🖥️ <a href="https://github.com/Dr0wsyC0der/desktop-hub">ESP Widget</a>
+
+Настольный IoT-виджет на ESP32-S3 с локальным backend и приложением для ПК.
+
+**Основные возможности**
+
+<ul>
+<li>Прошивка на C++ / PlatformIO, интерфейс на LVGL</li>
+<li>Локальный backend на aiohttp</li>
+<li>Автоматическое обнаружение устройства по UDP</li>
+<li>Обмен данными в реальном времени через WebSocket</li>
+<li>OTA-обновление прошивки</li>
+<li>Загрузка CPU / GPU / RAM, погода, расписание транспорта</li>
+</ul>
+
+`ESP32-S3` `C++` `PlatformIO` `Python` `aiohttp` `WebSocket` `OTA`
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
 ### 📊 <a href="https://github.com/Dr0wsyC0der/afin-ui-backend">AFIN</a>
 
 Платформа моделирования и анализа бизнес-процессов с ML-прогнозом задержек и объяснениями от LLM.
@@ -72,29 +95,6 @@
 🏆 **Финалист Акселератора МТУСИ**
 
 `Python` `FastAPI` `SQLAlchemy` `LightGBM` `LLM` `httpx` `Docker`
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 🖥️ <a href="https://github.com/Dr0wsyC0der/desktop-hub">ESP Widget</a>
-
-Настольный IoT-виджет на ESP32-S3 с локальным backend и приложением для ПК.
-
-**Основные возможности**
-
-<ul>
-<li>Прошивка на C++ / PlatformIO, интерфейс на LVGL</li>
-<li>Локальный backend на aiohttp</li>
-<li>Автоматическое обнаружение устройства по UDP</li>
-<li>Обмен данными в реальном времени через WebSocket</li>
-<li>OTA-обновление прошивки</li>
-<li>Загрузка CPU / GPU / RAM, погода, расписание транспорта</li>
-</ul>
-
-`ESP32-S3` `C++` `PlatformIO` `Python` `aiohttp` `WebSocket` `OTA`
 
 </td>
 <td width="50%" valign="top">
@@ -118,6 +118,7 @@
 
 </td>
 </tr>
+
 </table>
 
 ---
